@@ -1,0 +1,46 @@
+{
+    "name": "bluesea-cms/semaphore",
+    "description": "Laravel Plugin for SMS notification using Semaphore",
+    "keywords": [
+        "semaphore", "sms", "laravel"
+    ],
+    "type": "library",
+    "require": {
+        "php": "^7.3",
+        "illuminate/support": "^7.0|^8.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BlueSea\\Semaphore\\": "src"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "authors": [
+        {
+            "name": "Jefte Caro",
+            "email": "carojefte@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BlueSea\\Semaphore\\SemaphoreServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
