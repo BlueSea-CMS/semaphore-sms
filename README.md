@@ -132,8 +132,8 @@ Add a parameter to access the messages on certain pages
 ```php
  $messages = Semaphore::messages([
 	 'page' => 10,
-	 'limit' => 500, 				// Default s 100, Maximum of 1000 per page
-	 'network' => 'globe', 			// Ex. globe, smart
+	 'limit' => 500,		// Default is 100, Maximum of 1000 per page
+	 'network' => 'globe', 		// Ex. globe, smart
 	 'startDate' => '2020-02-20',	// Format is "YYYY-MM-DD"
 	 'endDate', => '2020-12-31',	// Format is "YYYY-MM-DD"
  ]);
@@ -161,7 +161,7 @@ $transactions = Semaphore::transactions();
 
 $params = [
 	 'page' => 10,
-	 'limit' => 500, 				// Default s 100, Maximum of 1000 per page
+	 'limit' => 500, 				// Default is 100, Maximum of 1000 per page
 ];
 $transactions = Semaphore::transactions($params);
  
@@ -174,7 +174,7 @@ $senderNames = Semaphore::senderNames();
 
 $params = [
 	 'page' => 10,
-	 'limit' => 500, 				// Default s 100, Maximum of 1000 per page
+	 'limit' => 500, 				// Default is 100, Maximum of 1000 per page
 ];
 
 $senderNames = Semaphore::senderNames($params);
@@ -189,7 +189,7 @@ $users = Semaphore::users();
 
 $params = [
 	 'page' => 10,
-	 'limit' => 500, 				// Default s 100, Maximum of 1000 per page
+	 'limit' => 500, 				// Default is 100, Maximum of 1000 per page
 ];
 $users = Semaphore::users($params);
 
