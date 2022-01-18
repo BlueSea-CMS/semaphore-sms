@@ -578,9 +578,9 @@ class HttpConnector
      *
      * @return \BlueSea\Semaphore\MessageCollection
      */
-    public function messages()
+    public function messages($params = [])
     {
-        $this->get(static::MESSAGE);
+        $this->get(static::MESSAGE, $params);
 
         $this->validateResponse();
 
