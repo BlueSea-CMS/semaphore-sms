@@ -114,7 +114,7 @@ class SemaphorePublish extends Command
 
     public function resourcePath($res)
     {
-        return __DIR__ . '../../resources/' . $res;
+        return __DIR__ . '/../resources/' . $res;
     }
 
     public function resourceExists($res)
